@@ -1,0 +1,39 @@
+.wrapper {
+    overflow: hidden;
+  }
+  
+  .sliding-background-1 {
+    margin-top: 100px;
+    background: url("/image/1.png");
+    background-repeat: repeat-x;
+    height: 290px;
+    width: 10000px;
+    animation: slide 20s linear infinite;
+  }
+
+  .sliding-background-2 {
+    background: url("/image/2.png");
+    background-repeat: repeat-x;
+    height: 160px;
+    width: 10000px;
+    animation: slide-1 20s linear infinite;
+  }
+  
+  @keyframes slide{
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-1692px, 0, 0);
+    }
+  }
+
+  
+  @keyframes slide-1{
+    0%{
+      transform: translate3d(-1692px, 0, 0);
+    }
+    100%{
+      transform: translate3d(0, 0, 0);
+    }
+  }
